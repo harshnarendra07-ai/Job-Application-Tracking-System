@@ -1,36 +1,50 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# CareerPulse: Job Application Tracking System
 
-## Getting Started
+A modern, local-first Next.js dashboard designed to help engineers and professionals track their job applications, parse CVs, and instantly verify their compatibility against Job Descriptions.
 
-First, run the development server:
+![Dashboard Preview]((placeholder for screenshot))
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **The Ledger**: A sleek tabular history of your job applications with expanding rows to view full metrics, notes, and submitted documents.
+- **Client-Side Document Parsing**: Drag and drop `.txt`, `.csv`, `.pdf`, or `.docx` files natively into your browser to safely extract text into your CV/Cover Letter history without any backend servers!
+- **Interactive KPI Filtering**: Click any row in your application history, and the dashboard metrics (Interview Rate, Active Pipeline) instantly filter to represent that specific application.
+- **Local-First Privacy**: No cloud databases. All of your user profiles, job data, and CVs are securely saved to your browser's local storage utilizing Zustand Persist.
+- **Profile Auto-Suggest**: Add "Sectors" to your profile (like *Technology* or *Healthcare*) and get intelligent, click-to-add action phrases recommended for your bio.
+- **Mock AI Compatibility Engine**: Click "Analyze Compatibility" on any application to generate a simulated mapping score of your Profile + CV against the Target Job Description.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Quick Start (Run Locally)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+This application is completely self-contained. To run it on your own machine:
 
-## Learn More
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/YOUR_USERNAME/Job-Application-Tracking-System.git
+   cd Job-Application-Tracking-System/careerpulse
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. **Start the development server:**
+   ```bash
+   npm run dev
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+4. **Open in browser:**
+   Navigate to [http://localhost:3000](http://localhost:3000)
 
-## Deploy on Vercel
+Your data will automatically begin saving locally in your browser.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Tech Stack
+- **Framework**: Next.js 15 (App Router)
+- **Styling**: Tailwind CSS 4
+- **State Management**: Zustand
+- **Animations**: Framer Motion
+- **Icons**: Lucide React
+- **Document Parsing**: pdfjs-dist, mammoth.js
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## License
+MIT
