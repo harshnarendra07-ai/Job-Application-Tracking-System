@@ -2,8 +2,6 @@
 
 A modern, local-first Next.js dashboard designed to help engineers and professionals track their job applications, parse CVs, and instantly verify their compatibility against Job Descriptions.
 
-![Dashboard Preview]((placeholder for screenshot))
-
 ## Features
 
 - **The Ledger**: A sleek tabular history of your job applications with expanding rows to view full metrics, notes, and submitted documents.
