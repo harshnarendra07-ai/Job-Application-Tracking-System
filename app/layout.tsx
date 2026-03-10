@@ -24,8 +24,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark">
-      <body className={`${inter.variable} ${jetbrainsMono.variable} antialiased min-h-screen bg-slate-950 text-slate-50 font-sans selection:bg-blue-500/30 selection:text-blue-200`}>
+    <html lang="en" className="dark" suppressHydrationWarning>
+      <body className={`${inter.variable} ${jetbrainsMono.variable} antialiased min-h-screen bg-slate-950 text-slate-50 font-sans selection:bg-blue-500/30 selection:text-blue-200`} suppressHydrationWarning>
         <AuthGuard>{children}</AuthGuard>
       </body>
     </html>
